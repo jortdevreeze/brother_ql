@@ -182,6 +182,7 @@ class BrotherQLRaster(object):
             return
         self.data += b'\x1B\x69\x4B' # ESC i K
         flags = 0x00
+        flags |= 1 << 2 # Enable half-cut
         flags |= self.cut_at_end << 3
         flags |= self.dpi_600 << 6
         flags |= self.two_color_printing << 0
