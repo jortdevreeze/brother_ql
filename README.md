@@ -1,3 +1,12 @@
+## The is a modified fork of the brother\_ql package.
+
+This modified package supports printing on the Brother PT-P950NW (36mm and 12mm labels are currently supported/tested). 
+In addition the package performs a half-cut after each print job.
+
+    brother_ql -b network -p tcp://network-address:port -m PT-P900W print -c -l pt36 -r 90 path/to/filename.jpg  
+
+See below for the original documentation.
+
 ## brother\_ql
 
 A Python package to control Brother QL label printers.
